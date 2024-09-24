@@ -1,3 +1,8 @@
+
+.background{
+    background-color: #ffffff;
+    text-align: center;
+}
 ul {
 
     list-style-type: none;
@@ -21,24 +26,32 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+.active{
+    background-color: purple;
+}
 
 li a:hover {
     background-color: #ff4d00;
 }
 
+
 .mainTitle {
+    color: rgb(52, 52, 52);
     margin-top: 2vw;
     text-align: center;
     font-size: 25px;
     font-weight: normal;
     font-family: "Oswald", sans-serif;
 }
+h1, h2, p{
+    color: rgb(77, 77, 77)
+}
 
 .balls {
 
     width: 250px;
     margin: 25px auto;
-    color: #000000;
+    color: #ffffff;
     font-size: 16px;
 }
 
@@ -48,6 +61,7 @@ li a:hover {
     display: inline-block;
     margin: 0 10px;
     vertical-align: top;
+    transition: transform 0.2s;
 }
 .gamePictureDiv h1{
     text-align: left;
@@ -61,11 +75,21 @@ li a:hover {
     border-radius: 25px 25px;
     
 }
-.gamePictureDiv img :hover{
-    
+.gamePictureDiv:hover, .gamePictureDiv:focus{
+        transform: scale(1.1);
+}
+.gamePictureDiv:not(:hover), .gamePictureDiv:not(:focus){
 }
 .centeredContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+.messagebox{
+    width: 600px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+
