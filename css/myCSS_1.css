@@ -147,7 +147,8 @@ h1, h2, p{
 .profilePicture{
     max-width: 50%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 15%;
+     margin-bottom: 25px;
 
 }
 footer{
