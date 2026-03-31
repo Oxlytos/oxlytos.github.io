@@ -1,30 +1,52 @@
-
-.background{
+.background {
     text-align: center;
+    min-height: 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: linear-gradient(229deg, #edab5a, #c372e3, #f44761);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    backdrop-filter: blur(10px);
+    background-image: url("../images/code.jpg");
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+
+    50% {
+        background-position: 7% 100%
+    }
+
+    100% {
+        background-position: 94% 0%
+    }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+
+    50% {
+        background-position: 7% 100%
+    }
+
+    100% {
+        background-position: 94% 0%
+    }
 }
+
 @keyframes AnimationName {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+
+    50% {
+        background-position: 7% 100%
+    }
+
+    100% {
+        background-position: 94% 0%
+    }
 }
 
 ul {
@@ -36,7 +58,7 @@ ul {
     box-shadow: 0px 10px 30px rgb(255, 0, 225);
     backdrop-filter: blur(9.7px);
     -webkit-backdrop-filter: blur(9.7px);
-    
+
 }
 
 li {
@@ -52,7 +74,8 @@ li a {
     padding: 25px 25px;
     text-decoration: none;
 }
-.active{
+
+.active {
     background-color: rgba(128, 0, 128, 0.366);
 }
 
@@ -62,17 +85,45 @@ li a:hover {
 
 
 .mainTitle {
-    color: rgb(52, 52, 52);
+    color: rgb(255, 255, 255);
+    margin: auto;
     margin-top: 2vw;
+    padding: 20px;
+    width: 50%;
+    justify-content: center;
+    border-radius: 25px;
     text-align: center;
     font-size: 25px;
-    font-family: "Protest Strike", sans-serif;
+    font-family: 'Open-Dyslexic', sans-serif;
     font-weight: 100;
-    font-style: italic;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
-h1, h2, p{
+
+.mainTitle img {
+    border-radius: 25px;
+
+    height: 5%;
+    width: 5%;
+}
+
+.maintitle p {
+    color: rgb(255, 255, 255);
+
+}
+
+h1,
+h2,
+p {
     color: rgb(77, 77, 77)
 }
+
+h1 span {
+    font-size: 54px;
+}
+
 
 .balls {
 
@@ -81,8 +132,16 @@ h1, h2, p{
     color: #ffffff;
     font-size: 16px;
 }
+.instagram-minimal {
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-.contentFrame{
+.instagram-minimal iframe {
+  border: none !important;
+}
+
+.contentFrame {
     display: inline-block;
     background: rgba(255, 255, 255, 0.21);
     border-radius: 24px;
@@ -90,11 +149,11 @@ h1, h2, p{
     backdrop-filter: blur(7.6px);
     -webkit-backdrop-filter: blur(7.6px);
     border: 1px solid rgba(255, 255, 255, 0.55);
-  }
-    
+}
 
 
-.gamePictureDiv{
+
+.gamePictureDiv {
     font-family: "Protest Strike", sans-serif;
     width: 500px;
     height: auto;
@@ -103,37 +162,52 @@ h1, h2, p{
     vertical-align: top;
     transition: transform 0.2s;
 }
-.gamePictureDiv h1{
+
+.gamePictureDiv h1 {
     text-align: left;
     font-style: italic;
     width: auto;
     font-size: 20px;
 }
- .gamePictureDiv img{
+
+.gamePictureDiv img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 25px 25px;
-    
+
 }
-.gamePictureDiv:hover, .gamePictureDiv:focus{
-        transform: scale(1.1);
+
+.gamePictureDiv:hover,
+.gamePictureDiv:focus {
+    transform: scale(1.1);
 }
-.gamePictureDiv:not(:hover), .gamePictureDiv:not(:focus){
-}
-.centeredContainer{
+
+.gamePictureDiv:not(:hover),
+.gamePictureDiv:not(:focus) {}
+
+.centeredContainer {
+    font-family: "Fira Code", monospace;
     margin-top: 25px;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.messagebox{
-    width: 600px;
+
+.messagebox {
+      font-family: "Fira Code", monospace;
+      padding: 25px;
+       color: white;
+    width: 900px;
     display: inline-block;
     margin: 0 10px;
     vertical-align: top;
 }
+.messagebox p{
+    color: white;
+}
 
-.aboutGlass{
+.aboutGlass {
     /* From https://css.glass */
     font-family: "Protest Strike", sans-serif;
     display: inline-block;
@@ -144,19 +218,26 @@ h1, h2, p{
     -webkit-backdrop-filter: blur(7.6px);
     border: 1px solid rgba(255, 255, 255, 0.55);
 }
-.profilePicture{
+.aboutGlass img{
+    height: 10%;
+    width: 10%;
+}
+
+.profilePicture {
     max-width: 50%;
     height: auto;
     border-radius: 15%;
-     margin-bottom: 25px;
+    margin-bottom: 25px;
 
 }
-footer{
+
+footer {
     background-color: #2c2526;
     padding-top: 25px;
     padding-bottom: 50px;
     color: white;
 }
+
 .css-selector {
     background: linear-gradient(270deg, #305cb4, #f7d515);
     background-size: 400% 400%;
@@ -168,24 +249,59 @@ footer{
 }
 
 @-webkit-keyframes gradientbackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes gradientbackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-o-keyframes gradientbackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes gradientbackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 #lodah {
@@ -201,41 +317,69 @@ footer{
     border-top: 16px solid #ffffff;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  /* Add animation to "page content" */
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 #pageContent {
-  display: none;
-  text-align: center;}
-  /* HTML: <div class="loader"></div> */
+    display: none;
+    text-align: center;
+}
 
-  /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+
+/* HTML: <div class="loader"></div> */
 #loader {
     position: absolute;
     left: 50%;
@@ -244,12 +388,29 @@ footer{
     width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: 
-      radial-gradient(farthest-side,#ffae00 94%,#0000) top/8px 8px no-repeat,
-      conic-gradient(#00ff0d00 30%,#007fa3);
-    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    background:
+        radial-gradient(farthest-side, #ffae00 94%, #0000) top/8px 8px no-repeat,
+        conic-gradient(#00ff0d00 30%, #007fa3);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
     animation: l13 1s infinite linear;
-  }
-  @keyframes l13{ 
-    100%{transform: rotate(1turn)}
-  }
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.space-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
