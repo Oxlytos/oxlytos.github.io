@@ -29,10 +29,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+            <script src="js/burgerscript.js"></script>
+
 
 </head>
 
-<body class="background">
+<body class="background" onload="getBurgerPics()">
     <ul>
         <li><a href="index.html">🏠Home</a></li>
         <li><a class="active" href="">📰News and Updates</a></li>
@@ -42,12 +44,10 @@
     <div class="messagebox">
         <h1>Instagram feed here later</h1>
     </div>
-    <div class="messagebox instagram-minimal">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTBI9zfiJw0/"
-            data-instgrm-version="14">
-        </blockquote>
+    <div id="burger_container" class="burger_pics">
+
     </div>
-    <script async src="//www.instagram.com/embed.js"></script>
+   
 </body>
 
 </html>

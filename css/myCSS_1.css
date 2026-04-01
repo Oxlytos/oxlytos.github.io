@@ -141,6 +141,12 @@ h1 span {
   border: none !important;
 }
 
+.burger_pics img{
+    height: 10%;
+    width: 10%;
+    padding:15px;
+     border-radius: 25px 25px;
+}
 .contentFrame {
     display: inline-block;
     background: rgba(255, 255, 255, 0.21);
@@ -377,9 +383,6 @@ footer {
     text-align: center;
 }
 
-/* HTML: <div class="loader"></div> */
-
-/* HTML: <div class="loader"></div> */
 #loader {
     position: absolute;
     left: 50%;
