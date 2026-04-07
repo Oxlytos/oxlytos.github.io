@@ -142,6 +142,7 @@ h1 span {
 }
 
 .burger_pics img{
+    min-width: 200px;
     height: 10%;
     width: 10%;
     padding:15px;
