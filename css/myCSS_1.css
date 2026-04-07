@@ -230,7 +230,7 @@ h1 span {
 }
 
 .profilePicture {
-    max-width: 50%;
+    min-width: 30%;
     height: auto;
     border-radius: 15%;
     margin-bottom: 25px;
