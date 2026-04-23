@@ -91,6 +91,7 @@ justify-content: center;
 
 li a:hover {
     transform: scale(2);
+    color: yellow;
     font-family: 'Open-Dyslexic', sans-serif;
     font-style: italic;
 }
@@ -166,9 +167,15 @@ h1 span {
 }
 
 
-
+.linkededIn{
+    border: 1px solid red;
+    transition: transform 0.2s;
+}
+.linkededIn:hover{
+    transform: scale(1.1);
+}
 .gamePictureDiv {
-    font-family: "Protest Strike", sans-serif;
+    font-family: 'Open-Dyslexic';
     max-width: 500px;
     display: inline-block;
     margin: 0 25px;vertical-align: middle;
@@ -198,7 +205,7 @@ h1 span {
 .gamePictureDiv:not(:focus) {}
 
 .centeredContainer {
-    font-family: "Fira Code", monospace;
+    font-family: 'Open-Dyslexic';
     margin-top: 25px;
     color: white;
     justify-content: center;
@@ -213,7 +220,10 @@ h1 span {
     color: white;
     text-align: center;        
 }
-
+.qrcode {
+    width: 300px !important; 
+    height: auto;
+}
 .messagebox p {
     text-align: center;
     margin: 50px;
