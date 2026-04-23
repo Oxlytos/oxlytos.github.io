@@ -96,6 +96,7 @@ li a:hover {
 }
 
 html,body{
+    margin: auto;
   font-family: 'Open-Dyslexic', sans-serif;}
 
 .mainTitle {
@@ -205,8 +206,8 @@ h1 span {
 }
 
 .messagebox {
+     display: inline-block;
     max-width: 800px;           
-    margin: 0 auto;           
     padding: 20px;
     font-family: "Fira Code", monospace;
     color: white;
@@ -214,7 +215,8 @@ h1 span {
 }
 
 .messagebox p {
-    margin: 10px 0;
+    text-align: center;
+    margin: 50px;
 }
 .netLogo{
     min-width: 50px;
@@ -249,7 +251,7 @@ h1 span {
 
 footer {
     background-color: #2c2526;
-    padding-top: 25px;
+    padding-top: 50px;
     padding-bottom: 50px;
     color: white;
 }
