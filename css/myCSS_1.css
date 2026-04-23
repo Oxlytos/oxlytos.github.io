@@ -1,12 +1,18 @@
 .background {
-    text-align: center;
-    min-height: 100vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(10px);
-    background-image: url("../images/code.jpg");
+  min-height: 100vh;
+  text-align: center;
 }
 
+.background::before {
+  content: "";
+  position: fixed; /* important */
+  inset: 0;
+  background-image: url("/images/code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(20px);
+  z-index: -1;
+}
 @-webkit-keyframes AnimationName {
     0% {
         background-position: 94% 0%
@@ -50,58 +56,56 @@
 }
 
 ul {
-    list-style-type: none;
+    display: flex;
+    width: 100%;
     margin: 0;
     padding: 0;
+    text-align: left;
+    list-style-type: none;
     overflow: hidden;
-    background-color: #c0222287;
-    box-shadow: 0px 10px 30px rgb(255, 0, 225);
-    backdrop-filter: blur(9.7px);
-    -webkit-backdrop-filter: blur(9.7px);
 
 }
 
 li {
-    display: inline-block;
-    text-align: center;
+    flex: 1;
+    text-align: left;
 }
 
 li a {
-    font-family: "Protest Strike", sans-serif;
-    display: block;
+    font-family: 'Open-Dyslexic', sans-serif;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
     color: white;
-    text-align: center;
-    padding: 25px 25px;
+    align-items: center;
+justify-content: center;
     text-decoration: none;
-}
+       transition: transform 0.2s;
 
+}aboutGlass
 .active {
-    background-color: rgba(128, 0, 128, 0.366);
+
+    font-weight: bold;
+    font-style: italic;
 }
 
 li a:hover {
-    background-color: #ff4d006f;
+    transform: scale(2);
+    font-family: 'Open-Dyslexic', sans-serif;
+    font-style: italic;
 }
 
+html,body{
+  font-family: 'Open-Dyslexic', sans-serif;}
 
 .mainTitle {
-    color: rgb(255, 255, 255);
-    margin: auto;
+    color: rgb(255, 0, 0);
     margin-top: 2vw;
-    padding: 20px;
-    width: 50%;
+    display: inline-block;
     justify-content: center;
-    border-radius: 25px;
-    text-align: center;
     font-size: 25px;
-    font-family: 'Open-Dyslexic', sans-serif;
-    font-weight: 100;
-    font-family: "Fira Code", monospace;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'Open-Dyslexic';
 }
-
 .mainTitle img {
     border-radius: 25px;
 
@@ -111,13 +115,12 @@ li a:hover {
 
 .maintitle p {
     color: rgb(255, 255, 255);
-
 }
 
 h1,
 h2,
 p {
-    color: rgb(77, 77, 77)
+    color: rgb(255, 255, 255)
 }
 
 h1 span {
@@ -149,7 +152,10 @@ h1 span {
      border-radius: 25px 25px;
 }
 .contentFrame {
+    
     display: inline-block;
+    width: auto;
+    margin: auto;
     background: rgba(255, 255, 255, 0.21);
     border-radius: 24px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -162,11 +168,9 @@ h1 span {
 
 .gamePictureDiv {
     font-family: "Protest Strike", sans-serif;
-    width: 500px;
-    height: auto;
+    max-width: 500px;
     display: inline-block;
-    margin: 0 25px;
-    vertical-align: top;
+    margin: 0 25px;vertical-align: middle;
     transition: transform 0.2s;
 }
 
@@ -196,34 +200,38 @@ h1 span {
     font-family: "Fira Code", monospace;
     margin-top: 25px;
     color: white;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .messagebox {
-      font-family: "Fira Code", monospace;
-      padding: 25px;
-       color: white;
-    width: 900px;
-    display: inline-block;
-    margin: 0 10px;
-    vertical-align: top;
-}
-.messagebox p{
+    max-width: 800px;           
+    margin: 0 auto;           
+    padding: 20px;
+    font-family: "Fira Code", monospace;
     color: white;
+    text-align: center;        
 }
 
+.messagebox p {
+    margin: 10px 0;
+}
+.netLogo{
+    min-width: 50px;
+  max-width: 3vw;
+}
 .aboutGlass {
     /* From https://css.glass */
-    font-family: "Protest Strike", sans-serif;
     display: inline-block;
+    width: auto;
+        border: 1px solid rgba(255, 255, 255, 0.55);
+
+    font-family: "Protest Strike", sans-serif;
     background: rgba(255, 255, 255, 0.303);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.6px);
     -webkit-backdrop-filter: blur(7.6px);
-    border: 1px solid rgba(255, 255, 255, 0.55);
 }
 .aboutGlass img{
     height: 10%;
@@ -231,10 +239,11 @@ h1 span {
 }
 
 .profilePicture {
-    min-width: 30%;
+    min-width: 20%;
     height: auto;
     border-radius: 15%;
     margin-bottom: 25px;
+    filter: grayscale(0.3);
 
 }
 
@@ -311,40 +320,7 @@ footer {
     }
 }
 
-#lodah {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    box-shadow: 25px orange;
-    width: 250px;
-    height: 250px;
-    margin: -76px 0 0 -76px;
-    border-radius: 50%;
-    border-top: 16px solid #ffffff;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
 
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -405,16 +381,3 @@ footer {
     }
 }
 
-.bangers-regular {
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-.space-grotesk {
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 450;
-    font-style: normal;
-}
